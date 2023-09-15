@@ -6,17 +6,17 @@
 ### Why?
 ###
 
-#### Allow for Scalable yet manageable systems
+### Allow for Scalable yet manageable systems
 A lot of workloads need multiple hosts and/or a huge load of peripherals to be connected and managed.
 - Traditional Deskside Chassis and Rackmount Cases do not scale well and are physically constrained in terms of expansion options.
 ###
 
-#### Enable bigger Systems
+### Enable bigger Systems
 Being able to hook up a lot of Storage, Accelerators, Interfaces and other Expansions beyond the limits of classical Chassis configurations does have a lot of nieche applications that are underserved.
 - For example to allow for commercial off-the-shelp designs in A/V production and broadcast as well as Rendering and CAD workloads.
 ###
 
-#### Establish a multi-vendor & multi-provider Standard for facilitating these demands
+### Establish a multi-vendor & multi-provider Standard for facilitating these demands
 This will keep costs down, increase adoption and enhance operability.
 - By only specifying the necessities and allowing for maximum flexibility, the Systems Integrators can customize the Setup to the needs and constraints of it's Use-Case.
 
@@ -25,16 +25,16 @@ This will keep costs down, increase adoption and enhance operability.
 Use of Common, off-the-shelf standards and solutions.
 ###
 
-#### [19" Rackmount](https://en.wikipedia.org/wiki/19-inch_rack)
+### [19" Rackmount](https://en.wikipedia.org/wiki/19-inch_rack)
 This keeps costs for cases down whilst also providing means of mechanically mounting said components in a safe and secure manner.
 ###
 
-#### 48V DC Power Rails
+### 48V DC Power Rails
 This reduces the need for multiple power supplies whilst also easing integration into varying electricity Standards and Setups as well as UPSes and Redundency.
 - Utilizing [OpenCompute Power Systems](https://www.opencompute.org/projects/rack-and-power) to allow for high-density yet affordable systems.
 ###
 
-#### Centralized Airflow and [liquid cooling system](https://en.wikipedia.org/wiki/Computer_cooling#Liquid_cooling)
+### Centralized Airflow and [liquid cooling system](https://en.wikipedia.org/wiki/Computer_cooling#Liquid_cooling)
 In line with rackmount conventions, the System will pull in cool ambient air from the front and exhaust hot air to the rear.
 - A [Massive radiator at the rear](https://www.youtube.com/watch?v=tbRe1k2k0ow) is being used to utilize a high-pressure & high-flow rate cooling solution to keep components at reasonable temperatures.
   - [Spill-free couplings](https://www.staubli.com/global/en/fluid-connectors/products/quick-and-dry-disconnect-couplings/thermal-management/sph-ba-cg-aluminum-bayonet.html) allow for the addition or removal of units with ease.
@@ -47,17 +47,17 @@ In line with rackmount conventions, the System will pull in cool ambient air fro
     - The ability to put an UltraStation [deskside like a traditional High-End Workstation](https://www.youtube.com/watch?v=5TRr2oWeSw0) is key to it's useability and accessibility.
 
 ###
-#### (Optical) [PCI Express](https://en.wikipedia.org/wiki/PCI_Express) - based Interconnect
+### (Optical) [PCI Express](https://en.wikipedia.org/wiki/PCI_Express) - based Interconnect
 Using [SFF-8644 Connectors](http://sup.xenya.si/sup/info/finisar/SFF-8644.pdf) to allow for transparent PCIe cabling solutions.
 - This allows the use of cheap [off-the-shelf adaptors](https://dolphinics.com/products/MXH932.html) as well as [copper](https://www.dolphinics.com/products/PCI_Express_Gen4_SFF-8644_cables.html) and espechally [active optical cables](https://www.dolphinics.com/download/CABLES/MSFC4xM_Product_Brief.pdf) to interconnect the components.
 ###
 
-#### [PCI Express](https://en.wikipedia.org/wiki/PCI_Express) Switched "Backplane"
+### [PCI Express](https://en.wikipedia.org/wiki/PCI_Express) Switched "Backplane"
 Using a [Switch for the high-speed PCIe-based interconnect between modules](http://www.dolphinics.com/products/MXS924.html) provides a transparent yet efficient way to access multiple peripherals beyond the amount of directly interconnectable lanes.
 - This also allows for multiple-host/targets to be used and provide a more stable option than the [low-end narrowband solutions used in many cases](https://www.aliexpress.com/item/PCI-E-1X-Expansion-Kit-1-to-4-Ports-Switch-PCIe-x16-slots-Multiplier-Hub-Riser/32818453487.html).
 ###
 
-#### Ethernet-Based "Control Plane"
+### Ethernet-Based "Control Plane"
 Utilizing [PoE and Gigabit Ethernet to manage modules, backplanes and hosts](https://eu.store.ui.com/eu/en/collections/unifi-switching-pro-power-over-ethernet) with ease.
 - This also allows for [Lights-Out-Managment](https://www.techtarget.com/searchdatacenter/definition/lights-out-management) of components and thus ["warm-swapping"](https://en.wikipedia.org/wiki/Hot_swapping) of components not designed to be hot-swappable.
 ###
