@@ -27,6 +27,7 @@ Use of Common, off-the-shelf standards and solutions.
 
 ### [19" Rackmount](https://en.wikipedia.org/wiki/19-inch_rack)
 This keeps costs for cases down whilst also providing means of mechanically mounting said components in a safe and secure manner.
+- Components are seperated in their rackmounted enclosures so repairs and upgrades are easy to facilitate and compliance with RF- & spectrum regulations are trivial to met, as every subcomponents complies, so no need to certify the *entire rack* newly.
 ###
 
 ### 48V DC Power Rails
@@ -48,24 +49,29 @@ In line with rackmount conventions, the System will pull in cool ambient air fro
 
 ###
 ### (Optical) [PCI Express](https://en.wikipedia.org/wiki/PCI_Express) - based Interconnect
-Using [SFF-8644 Connectors](http://sup.xenya.si/sup/info/finisar/SFF-8644.pdf) to allow for transparent PCIe cabling solutions.
+Using [SFF-8644 Connectors](http://sup.xenya.si/sup/info/finisar/SFF-8644.pdf) to allow for [transparent PCIe cabling](https://www.dolphinics.com/products/PCI_Express_Gen5_SFF-8644_cables.html) solutions.
 - This allows the use of cheap [off-the-shelf adaptors](https://dolphinics.com/products/MXH932.html) as well as [copper](https://www.dolphinics.com/products/PCI_Express_Gen4_SFF-8644_cables.html) and espechally [active optical cables](https://www.dolphinics.com/download/CABLES/MSFC4xM_Product_Brief.pdf) to interconnect the components.
 ###
 
 ### [PCI Express](https://en.wikipedia.org/wiki/PCI_Express) Switched "Backplane"
-Using a [Switch for the high-speed PCIe-based interconnect between modules](http://www.dolphinics.com/products/MXS924.html) provides a transparent yet efficient way to access multiple peripherals beyond the amount of directly interconnectable lanes.
+Using a [Switch for the high-speed PCIe-based interconnect between modules](https://www.dolphinics.com/products/MXS524.html) provides a transparent yet efficient way to access multiple peripherals beyond the amount of directly interconnectable lanes.
 - This also allows for multiple-host/targets to be used and provide a more stable option than the [low-end narrowband solutions used in many cases](https://www.aliexpress.com/item/PCI-E-1X-Expansion-Kit-1-to-4-Ports-Switch-PCIe-x16-slots-Multiplier-Hub-Riser/32818453487.html).
+Hosts use [PCIe HBA Adaptors](https://www.dolphinics.com/products/MXH530.html) to be integrated. 
+- [Similar, but transparent Adaptors](https://www.dolphinics.com/products/MXH532.html) are to be used for *Target Devices* aka. Chassis with PCIe Hardware in them.
 ###
 
 ### Ethernet-Based "Control Plane"
 Utilizing [PoE and Gigabit Ethernet to manage modules, backplanes and hosts](https://eu.store.ui.com/eu/en/collections/unifi-switching-pro-power-over-ethernet) with ease.
 - This also allows for [Lights-Out-Managment](https://www.techtarget.com/searchdatacenter/definition/lights-out-management) of components and thus ["warm-swapping"](https://en.wikipedia.org/wiki/Hot_swapping) of components not designed to be hot-swappable.
+Devices are being [allocated and deallocated by the *Hosts* using CLI tools](https://www.dolphinics.com/solutions/pcie_hot_add_plug_swap.html) to allow for real, *guaranteed-rate I/O* and exclusive, *blocking* access, so they'll be gracefully added and removed to the system.
 ###
 
 ---
+
 ##
 
 ---
+
 ## Acknowledgements
 ### [SiliconGraphics Computer Systems](https://en.wikipedia.org/wiki/Silicon_Graphics) / sgi 
 #### [Onyx](https://en.wikipedia.org/wiki/SGI_Onyx)
@@ -77,3 +83,8 @@ This is one of the main inspirations for the UltraStation.
 ##
 ### An expired Trademark
 There [has been a trademark for the name UltraStation](https://register.dpma.de/DPMAregister/marke/register/395501105/DE) which lapsed in 2005 under the Register DE39550110.
+
+##
+### [Sun Microsystems](https://en.wikipedia.org/wiki/Sun_Microsystems) [UltraSPARC T2](https://en.wikipedia.org/wiki/UltraSPARC_T2), an [Open-Source'd](https://en.wikipedia.org/wiki/UltraSPARC_T2#Open_design) [SPARC V9](https://en.wikipedia.org/wiki/SPARC) CPU.
+At the time of it's release, this was the *Ultimate CPU* in terms of benchmarked performance.
+
