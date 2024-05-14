@@ -4,7 +4,7 @@
 ---
 ## FAQs
 ### Why?
-###
+There are many reasons to make a scalable Workstation Architecture
 
 ### Allow for Scalable yet manageable systems
 A lot of workloads need multiple hosts and/or a huge load of peripherals to be connected and managed.
@@ -33,6 +33,7 @@ This keeps costs for cases down whilst also providing means of mechanically moun
 ### 48V DC Power Rails
 This reduces the need for multiple power supplies whilst also easing integration into varying electricity Standards and Setups as well as UPSes and Redundency.
 - Utilizing [OpenCompute Power Systems](https://www.opencompute.org/projects/rack-and-power) to allow for high-density yet affordable systems.
+- 48V DC is a good compromise on complexity, voltage, amperage and provides easy means to downshift to any desired voltage as needed.
 ###
 
 ### Centralized Airflow and [liquid cooling system](https://en.wikipedia.org/wiki/Computer_cooling#Liquid_cooling)
@@ -51,6 +52,7 @@ In line with rackmount conventions, the System will pull in cool ambient air fro
 ### (Optical) [PCI Express](https://en.wikipedia.org/wiki/PCI_Express) - based Interconnect
 Using [SFF-8644 Connectors](http://sup.xenya.si/sup/info/finisar/SFF-8644.pdf) to allow for [transparent PCIe cabling](https://www.dolphinics.com/products/PCI_Express_Gen5_SFF-8644_cables.html) solutions.
 - This allows the use of cheap [off-the-shelf adaptors](https://dolphinics.com/products/MXH932.html) as well as [copper](https://www.dolphinics.com/products/PCI_Express_Gen4_SFF-8644_cables.html) and espechally [active optical cables](https://www.dolphinics.com/download/CABLES/MSFC4xM_Product_Brief.pdf) to interconnect the components.
+- Optical Cabling also prevents [Common-Mode interference](https://en.wikipedia.org/wiki/Common-mode_interference)or CMI and thus reduces risks of electrical faults and failures, enabling a higher density of highspeed connections closer without interfering each other.
 ###
 
 ### [PCI Express](https://en.wikipedia.org/wiki/PCI_Express) Switched "Backplane"

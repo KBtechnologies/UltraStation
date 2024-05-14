@@ -1,0 +1,14 @@
+#	.gitignore
+##	IDE Settings
+###	IntelliJ
+/.idea
+/.idea/
+/shelf/
+/workspace.xml
+/code-comments.xml
+/modules.xml
+/inspectionProfiles/profiles_settings.xml
+/misc.xml
+/vcs.xml
+/UltraStation.iml
+.idea
